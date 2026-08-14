@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="header__logo">
+    <a href="#inicio"> <img id="marca" src="imagenes/logop1.png" alt=""></a>
+  </div>
+
+  <nav class="header__nav" [class.header__nav--open]="menuAbierto">
+    <a href="#inicio">Inicio</a>
+    <a href="#skills">Skills</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <button class="header__toggle" (click)="menuAbierto = !menuAbierto" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+<div id="inicio"></div>

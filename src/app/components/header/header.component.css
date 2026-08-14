@@ -1,0 +1,95 @@
+/* header.component.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #1a1a1a;
+  color: #fff;
+
+  /* --- CAMBIOS PARA QUE SE QUEDE FIJO --- */
+  position: fixed;
+  /* Fija el header en la ventana */
+  top: 0;
+  /* Lo ancla al borde superior */
+  left: 0;
+  /* Lo alinea desde la esquina izquierda */
+  width: 100%;
+  /* Ocupa todo el ancho de la pantalla */
+  box-sizing: border-box;
+  /* Evita que el padding expanda el ancho y genere scroll horizontal */
+  z-index: 1000;
+  /* Asegura que siempre esté por encima del resto del contenido */
+}
+
+.header__logo span {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Nav oculto por defecto en mobile */
+.header__nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+}
+
+#marca {
+  height: auto;
+  width: 30px;
+}
+
+.header__nav--open {
+  display: flex;
+}
+
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #333;
+}
+
+/* Botón hamburguesa */
+.header__toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__toggle span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+/* Desktop: a partir de 768px */
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+  }
+
+  .header__nav a {
+    border-top: none;
+    padding: 0 1rem;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+#inicio {
+  scroll-margin-top: 90px;
+  /* Ajusta este valor según la altura de tu header */
+}

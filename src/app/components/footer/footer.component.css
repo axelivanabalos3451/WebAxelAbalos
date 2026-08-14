@@ -1,0 +1,62 @@
+.footer-contacto {
+    background-color: #121212;
+    border-top: 1px solid #333333;
+    color: #ffffff;
+    padding: 30px 20px 20px 20px;
+    /* Reducido drásticamente arriba y abajo */
+    margin-top: 40px;
+    /* Menos separación con la tarjeta anterior */
+    text-align: center;
+}
+
+.footer-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Reducido el espacio entre elementos */
+}
+
+.footer-contenido h2 {
+    font-size: 1.3rem;
+    /* Ligeramente más chico y elegante */
+    color: #38bdf8;
+    margin: 0;
+}
+
+.footer-datos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 5px 0;
+    /* Margen muy ajustado */
+}
+
+.footer-link {
+    background-color: #1e1e1e;
+    color: #e2e8f0;
+    padding: 8px 16px;
+    /* Botones más compactos */
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    border: 1px solid #334155;
+    transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+    background-color: #38bdf8;
+    color: #000000;
+    border-color: #38bdf8;
+}
+
+.footer-copy {
+    border-top: 1px solid #262626;
+    padding-top: 15px;
+    /* Espacio reducido para el copyright */
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: #64748b;
+}

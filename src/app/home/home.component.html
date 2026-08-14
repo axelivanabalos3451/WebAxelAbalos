@@ -1,0 +1,165 @@
+<div id="presentacion">
+
+    <div class="contenedor-imagen">
+        <img id="foto-perfil" src="imagenes/AxelCV.jpg" alt="">
+    </div>
+    <div id="cuerpo-presentacion">
+
+        <div id="nombre-dev">
+            <h1>Axel Abalos</h1>
+            <h3>Desarrollador Web Full-Stack | .NET & Java Spring Boot </h3>
+        </div>
+
+        <div id="textopresentacion">Desarrollador .NET con experiencia en ASP.NET Core y Entity Framework. Técnico
+            Universitario en
+            Desarrollo Web con conocimientos en bases de datos relacionales, consultas SQL, procedimientos
+            almacenados, modelado de datos y persistencia de información en SQL Server y MySQL. Con experiencia
+            también en Java y Spring Boot. Perfil analítico y adaptable, con interés en el aprendizaje continuo, el
+            procesamiento de datos y la incorporación de nuevas tecnologías que permitan aportar valor a los
+            proyectos y continuar creciendo profesionalmente.</div>
+
+    </div>
+
+</div>
+<div id="skills">
+    <h2>Tecnologias</h2>
+
+    <div class="skills-categoria">
+        <span class="categoria-titulo">Backend:</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">ASP.NET Core</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">Hibernate / JPA</span>
+        <span class="skill-tag">REST APIs</span>
+    </div>
+
+    <div class="skills-categoria">
+        <span class="categoria-titulo">Bases de Datos:</span>
+        <span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Stored Procedures</span>
+        <span class="skill-tag">DER</span>
+    </div>
+
+    <div class="skills-categoria">
+        <span class="categoria-titulo">Arquitectura:</span>
+        <span class="skill-tag">MVC</span>
+        <span class="skill-tag">Hexagonal</span>
+        <span class="skill-tag">SOLID</span>
+    </div>
+
+    <div class="skills-categoria">
+        <span class="categoria-titulo">Herramientas:</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">JUnit</span>
+        <span class="skill-tag">Mockito</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">Trello</span>
+    </div>
+
+    <div class="skills-categoria">
+        <span class="categoria-titulo">Frontend:</span>
+        <span class="skill-tag">Angular</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Bootstrap</span>
+    </div>
+</div>
+<div id="proyectos">
+    <div class="tarjeta-proyecto">
+        <h2>Proyectos</h2>
+        <div class="proyecto-info">
+            <h3>NurAlign</h3>
+            <p>Aplicación Híbrida para Seguimiento de Pacientes y Gestión de Terapeutas </p>
+            <p>NurAlign permite a personas con trastorno bipolar realizar un seguimiento de su día a día mediante una
+                mascota virtual personalizable que utiliza IA de Gemini para generar notificaciones y mensajes
+                personalizados a partir de los datos registrados por el usuario.
+            </p>
+            <p>
+                El sistema también cuenta con una plataforma web para terapeutas, donde pueden consultar la información
+                de sus pacientes, visualizar gráficos e informes de seguimiento y gestionar la reserva de turnos.</p>
+        </div>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carrusel-contenedor">
+            <button class="carrusel-btn prev" (click)="moverSlide(-1)">&#10094;</button>
+
+            <div class="carrusel-track-container">
+                <div class="carrusel-track">
+                    <!-- Agregamos (click) para abrir el modal pasando la ruta de la imagen -->
+                    <div class="slide current-slide">
+                        <img src="imagenes/nurAlign/registro1.png" alt="Pantalla 1"
+                            (click)="abrirModal('imagenes/nurAlign/registro1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/home1.png" alt="Pantalla 2"
+                            (click)="abrirModal('imagenes/nurAlign/home1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/Calendario1.png" alt="Pantalla 3"
+                            (click)="abrirModal('imagenes/nurAlign/Calendario1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/grafiInfo1.png" alt="Pantalla 4"
+                            (click)="abrirModal('imagenes/nurAlign/grafiInfo1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/grafico1.png" alt="Pantalla 5"
+                            (click)="abrirModal('imagenes/nurAlign/grafico1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/informes1.png" alt="Pantalla 6"
+                            (click)="abrirModal('imagenes/nurAlign/informes1.png')">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/nurAlign/informe1.png" alt="Pantalla 7"
+                            (click)="abrirModal('imagenes/nurAlign/informe1.png')">
+                    </div>
+                </div>
+            </div>
+
+            <button class="carrusel-btn next" (click)="moverSlide(1)">&#10095;</button>
+        </div>
+        <div id="enlaces">
+<a href="https://github.com/CrisGadea/NurAlign-front" target="_blank">Frontend</a><a href="https://github.com/CrisGadea/NurAlign-back" target="_blank">Backend</a>
+</div>
+        <div>
+            <h3>Sistema de Subastas</h3>
+            <p>Sistema que permite realizar subastas en tiempo real y, al terminar el tiempo de la misma, se envía un
+                mail al que realizó la oferta más alta para notificarle que ganó. Al cerrarse la subasta, se le habilita
+                al usuario ganador para que pueda calificar al vendedor con el sistema de puntaje que va de 1 a 5
+                estrellas. </p>
+        </div>
+
+        <div>
+            <h2>Experiencia Laboral</h2>
+            <p>Desarrollador .NET Junior — Point Centurión (Febrero 2024 – Septiembre 2024)</p>
+            <ul>
+                <li>Desarrollo de aplicación web utilizando ASP.NET Core y Entity Framework. </li>
+                <li>Persistencia y gestión de datos en bases de datos SQL. </li>
+                <li> Resolución de incidencias aplicando transacciones y rollbacks para garantizar la integridad de la
+                    información. </li>
+                <li>Documentación de soluciones y seguimiento de tickets. </li>
+                <li>Participación en tareas de análisis y validación de datos. </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- VENTANA MODAL (LIGHTBOX) PARA VER EN DETALLE -->
+@if (modalAbierto) {
+<div class="modal-overlay" (click)="cerrarModal()">
+    <div class="modal-contenido" (click)="$event.stopPropagation()">
+        <button class="modal-cerrar" (click)="cerrarModal()">&times;</button>
+        <img [src]="imagenActualModal" alt="Vista detallada">
+    </div>
+</div>
+}
+
+<app-footer></app-footer>
