@@ -13,7 +13,6 @@ menuAbierto = false;
 
 cerrarMenu()
 {
-
   this.menuAbierto = false;
 }
 }
