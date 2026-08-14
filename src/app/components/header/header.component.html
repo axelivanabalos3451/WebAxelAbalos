@@ -4,10 +4,10 @@
   </div>
 
   <nav class="header__nav" [class.header__nav--open]="menuAbierto">
-    <a href="#inicio">Inicio</a>
-    <a href="#skills">Skills</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#inicio" (click)="cerrarMenu()">Inicio</a>
+    <a href="#skills" (click)="cerrarMenu()">Skills</a>
+    <a href="#proyectos" (click)="cerrarMenu()">Proyectos</a>
+    <a href="#contacto" (click)="cerrarMenu()">Contacto</a>
   </nav>
 
   <button class="header__toggle" (click)="menuAbierto = !menuAbierto" aria-label="Abrir menú">
