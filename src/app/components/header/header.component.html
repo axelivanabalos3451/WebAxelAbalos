@@ -3,12 +3,12 @@
     <a href="#inicio"> <img id="marca" src="imagenes/logop1.png" alt=""></a>
   </div>
 
-  <nav class="header__nav" [class.header__nav--open]="menuAbierto">
-    <a href="#inicio" (click)="cerrarMenu()">Inicio</a>
-    <a href="#skills" (click)="cerrarMenu()">Skills</a>
-    <a href="#proyectos" (click)="cerrarMenu()">Proyectos</a>
-    <a href="#contacto" (click)="cerrarMenu()">Contacto</a>
-  </nav>
+<nav class="header__nav" [class.header__nav--open]="menuAbierto">
+  <a href="#inicio" (click)="irASeccion($event, 'inicio')">Inicio</a>
+  <a href="#skills" (click)="irASeccion($event, 'skills')">Skills</a>
+  <a href="#proyectos" (click)="irASeccion($event, 'proyectos')">Proyectos</a>
+  <a href="#contacto" (click)="irASeccion($event, 'contacto')">Contacto</a>
+</nav>
 
   <button class="header__toggle" (click)="menuAbierto = !menuAbierto" aria-label="Abrir menú">
     <span></span>
