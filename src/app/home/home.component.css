@@ -1,14 +1,14 @@
 
 #presentacion {
     position: relative;
-    background-color: #121212;   /* Un negro un poco más suave y moderno (tipo grafito) */
-    border: 1px solid #333333;   /* Un borde sutil y elegante en lugar de un blanco pesado */
-    border-radius: 16px;         /* Bordes un poco más redondeados */
+    background-color: #121212;   
+    border: 1px solid #333333;  
+    border-radius: 16px;         
     color: #ffffff;
-    padding: 40px 40px 40px 140px; /* Espacio izquierdo cómodo para la foto */
+    padding: 40px 140px 40px 140px; 
     max-width: 850px;
-    margin: 80px auto;           /* Centrado en la pantalla */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra sutil para darle profundidad */
+    margin: 80px auto;         
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
 .contenedor-imagen {
@@ -43,14 +43,14 @@
 #nombre-dev h3 {
     font-size: 1.1rem;
     font-weight: 400;
-    color: #38bdf8;              /* Un tono azul/celeste sutil para destacar tu rol (¡queda genial en portfolios de dev!) */
+    color: #38bdf8;             
     margin: 0;
 }
 
 #textopresentacion {
-    font-size: 0.95rem;
-    color: #cbd5e1;              /* Gris claro para que la lectura sea suave y no canse la vista */
-    line-height: 1.6;            /* Altura de línea para que los renglones no se amontonen */
+    font-size: 1.0rem;
+    color: #cbd5e1;            
+    line-height: 1.6;          
 }
 
 
@@ -96,7 +96,7 @@
     color: #ffffff;
     /* Usamos el mismo padding superior/inferior, pero un padding izquierdo 
        que empate visualmente con el texto de la tarjeta de arriba */
-    padding: 40px 40px 40px 140px; 
+    padding: 40px 140px 40px 140px; 
     max-width: 850px;
     margin: 40px auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -151,7 +151,7 @@
     border: 1px solid #333333;
     border-radius: 16px;
     color: #ffffff;
-  padding: 40px 40px 40px 140px; 
+  padding: 40px 140px 40px 140px; 
     max-width: 850px;
     margin: 40px auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -247,7 +247,12 @@
 .next {
     right: 10px;
 }
-
+.texto
+{
+    font-size: 1.0rem;
+    color: #cbd5e1;              /* Gris claro para que la lectura sea suave y no canse la vista */
+    line-height: 1.6;            /* Altura de línea para que los renglones no se amontonen */
+}
 
 
 #enlaces
@@ -372,7 +377,7 @@
 
     /* --- CORRECCIÓN PARA LA TARJETA DE PROYECTOS EN MOBILE --- */
     .tarjeta-proyecto {
-        padding: 30px 20px;
+        padding: 30px 10px;
         margin: 20px 15px;
     }
 }

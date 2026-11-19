@@ -1,16 +1,16 @@
 <div id="presentacion">
 
     <div class="contenedor-imagen">
-        <img id="foto-perfil" src="imagenes/AxelCV.jpg" alt="">
+        <img id="foto-perfil" src="imagenes/Axel.jpeg" alt="">
     </div>
     <div id="cuerpo-presentacion">
 
         <div id="nombre-dev">
             <h1>Axel Abalos</h1>
-            <h3>Desarrollador Java Backend | Spring Boot | ASP.NET Core | SQL Server | Testing </h3>
+            <h3>Desarrollador Backend | Java & Spring Boot | ASP.NET Core </h3>
         </div>
 
-        <div id="textopresentacion">Desarrollador Web Full-Stack con experiencia en ASP.NET Core, Entity Framework, Java
+        <div id="textopresentacion" class="texto">Desarrollador Web Full-Stack con experiencia en ASP.NET Core, Entity Framework, Java
             y Spring Boot. Técnico Universitario en Desarrollo Web, con sólidos conocimientos en bases de datos
             relacionales (SQL Server, MySQL), diseño de procedimientos almacenados y modelado de datos. Perfil
             analítico, orientado a resultados, con foco en el procesamiento de datos y la adopción de tecnologías que
@@ -23,60 +23,72 @@
     <h2>Tecnologías</h2>
 
     <div class="tecnologias-categoria">
-        <span class="categoria-titulo">Backend:</span>
-        <span class="tecnologias-tag">C#</span>
-        <span class="tecnologias-tag">ASP.NET Core</span>
-          <span class="tecnologias-tag">Entity Framework</span>
+        <span class="categoria-titulo">Lenguajes:</span>
         <span class="tecnologias-tag">Java</span>
-        <span class="tecnologias-tag">Spring Boot</span>
-        <span class="tecnologias-tag">Hibernate / JPA</span>
-        <span class="tecnologias-tag">REST APIs</span>
+        <span class="tecnologias-tag">C#</span>
+          <span class="tecnologias-tag">TypeScript</span>
     </div>
 
     <div class="tecnologias-categoria">
-        <span class="categoria-titulo">Bases de Datos:</span>
+        <span class="categoria-titulo">Frameworks:</span>
+        <span class="tecnologias-tag">Spring Boot</span>
+        <span class="tecnologias-tag">Spring Data JPA, </span>
+        <span class="tecnologias-tag">Hibernate</span>
+        <span class="tecnologias-tag"> ASP.NET Core</span>
+             <span class="tecnologias-tag">, Entity Framework,</span>  
+                <span class="tecnologias-tag"> Angular</span>
+    </div>
+
+    <div class="tecnologias-categoria">
+        <span class="categoria-titulo">Test:</span>
+        <span class="tecnologias-tag">JUnit</span>
+        <span class="tecnologias-tag">Xunit</span>
+        <span class="tecnologias-tag">Mockito</span>
+    </div>
+
+    <div class="tecnologias-categoria">
+        <span class="categoria-titulo">Bases de datos:</span>
         <span class="tecnologias-tag">SQL Server</span>
         <span class="tecnologias-tag">MySQL</span>
-        <span class="tecnologias-tag">Stored Procedures</span>
-        <span class="tecnologias-tag">DER</span>
-    </div>
 
-    <div class="tecnologias-categoria">
-        <span class="categoria-titulo">Arquitectura:</span>
-        <span class="tecnologias-tag">MVC</span>
-        <span class="tecnologias-tag">Hexagonal</span>
-        <span class="tecnologias-tag">SOLID</span>
     </div>
 
     <div class="tecnologias-categoria">
         <span class="categoria-titulo">Herramientas:</span>
-        <span class="tecnologias-tag">Git</span>
-        <span class="tecnologias-tag">GitHub</span>
-        <span class="tecnologias-tag">JUnit</span>
-        <span class="tecnologias-tag">Mockito</span>
+        <span class="tecnologias-tag">Maven</span>
+        <span class="tecnologias-tag">Git/Github</span>
         <span class="tecnologias-tag">CI/CD</span>
-        <span class="tecnologias-tag">Trello</span>
-    </div>
 
-    <div class="tecnologias-categoria">
-        <span class="categoria-titulo">Frontend:</span>
-        <span class="tecnologias-tag">Angular</span>
-        <span class="tecnologias-tag">TypeScript</span>
-        <span class="tecnologias-tag">HTML</span>
-        <span class="tecnologias-tag">CSS</span>
-        <span class="tecnologias-tag">Bootstrap</span>
     </div>
 
         <div class="tecnologias-categoria">
-        <span class="categoria-titulo">Seguridad</span>
+        <span class="categoria-titulo">Conceptos y prácticas de desarrollo</span>
+        <span class="tecnologias-tag">POO</span>
+        <span class="tecnologias-tag">REST APIs</span>
         <span class="tecnologias-tag">JWT</span>
-        <span class="tecnologias-tag">Spring Security</span>
+        <span class="tecnologias-tag">Arquitectura Hexagonal</span>
+        <span class="tecnologias-tag">Scrum</span>
     </div>
 </div>
 <div id="proyectos">
     <div class="tarjeta-proyecto">
+
+            <div >
+            <h2>Experiencia Laboral</h2>
+
+            <p class="texto">Desarrollador .NET Junior — Point Centurión (Febrero 2024 – Septiembre 2024)</p>
+
+<div class="texto">
+            <ul>
+                <li>Desarrollé en C# y ASP.NET Core una aplicación web interna para cargar los datos mensuales de afiliados de una obra social, cliente de la empresa: al subir el archivo TXT, el sistema lo lee línea por línea, interpreta cada formato de registro y lo inserta en SQL Server, reemplazando la carga manual de más de 3 millones de registros por archivo. </li>
+                <li>Resolví entre 3 y 4 tickets por día (20 a 50 minutos cada uno según complejidad), principalmente corrección de registros duplicados o mal cargados en SQL Server, usando transacciones para modificar los datos de forma segura y cargar solo los datos válidos.</li>
+            </ul>
+</div>
+
+        </div>
+
         <h2>Proyectos</h2>
-        <div class="proyecto-info">
+        <div class="proyecto-info" >
             <h3>NurAlign</h3>
             <p>Aplicación Híbrida para Seguimiento de Pacientes y Gestión de Terapeutas </p>
             <p>NurAlign permite a personas con trastorno bipolar realizar un seguimiento de su día a día mediante una
@@ -133,25 +145,14 @@
                 href="https://github.com/CrisGadea/NurAlign-back" target="_blank">Backend</a>
         </div>
         <div>
-            <h3>Sistema de Subastas</h3>
-            <p>Sistema que permite realizar subastas en tiempo real y, al terminar el tiempo de la misma, se envía un
+            <h2>Sistema de Subastas</h2>
+            <p class="texto">Sistema que permite realizar subastas en tiempo real y, al terminar el tiempo de la misma, se envía un
                 mail al que realizó la oferta más alta para notificarle que ganó. Al cerrarse la subasta, se le habilita
                 al usuario ganador para que pueda calificar al vendedor con el sistema de puntaje que va de 1 a 5
                 estrellas. </p>
         </div>
 
-        <div>
-            <h2>Experiencia Laboral</h2>
-            <p>Desarrollador .NET Junior — Point Centurión (Febrero 2024 – Septiembre 2024)</p>
-            <ul>
-                <li>Desarrollo de aplicación web utilizando ASP.NET Core y Entity Framework. </li>
-                <li>Persistencia y gestión de datos en bases de datos SQL. </li>
-                <li> Resolución de incidencias aplicando transacciones y rollbacks para garantizar la integridad de la
-                    información. </li>
-                <li>Documentación de soluciones y seguimiento de tickets. </li>
-                <li>Participación en tareas de análisis y validación de datos. </li>
-            </ul>
-        </div>
+    
     </div>
 
 
